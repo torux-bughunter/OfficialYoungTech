@@ -49,58 +49,74 @@ export default function Navbar() {
   }
 
   return (
-    <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-black/95 py-2" : "bg-black py-4"}`}
-    >
-      <div className="container flex h-16 items-center justify-between px-4">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/images/logo.svg"
-            alt="Young Tech Pioneers Logo"
-            width={200}
-            height={90}
-            className={`transition-all duration-300 ${isScrolled ? "h-12 w-auto" : "h-16 w-auto"}`}
-          />
-        </Link>
+    <header className="sticky top-0 z-50 w-full">
+      {/* Promotional Banner */}
+      <div className="w-full bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground">
+        <p className="flex items-center justify-center gap-2">
+          <span>🚀 Register now for STEAM Talks - Mentorship program starting April 20th!</span>
+          <a
+            href="https://www.jotform.com/form/250167953877168"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:text-white/90 transition-colors"
+          >
+            Sign up here →
+          </a>
+        </p>
+      </div>
 
-        <nav className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={handleScroll}
-              className="text-white hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium"
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
+      {/* Main Navbar */}
+      <div className={`w-full transition-all duration-300 ${isScrolled ? "bg-black/95 py-2" : "bg-black py-4"}`}>
+        <div className="container flex h-16 items-center justify-between px-4">
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo.svg"
+              alt="Young Tech Pioneers Logo"
+              width={200}
+              height={90}
+              className={`transition-all duration-300 ${isScrolled ? "h-12 w-auto" : "h-16 w-auto"}`}
+            />
+          </Link>
 
-        <Sheet>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon" className="text-white">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent className="bg-black text-white">
-            <nav className="flex flex-col gap-4 mt-8">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => {
-                    handleScroll(e)
-                    setOpen(false)
-                  }}
-                  className="text-white hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </nav>
-          </SheetContent>
-        </Sheet>
+          <nav className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={handleScroll}
+                className="text-white hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+
+          <Sheet>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="ghost" size="icon" className="text-white">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent className="bg-black text-white">
+              <nav className="flex flex-col gap-4 mt-8">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={(e) => {
+                      handleScroll(e)
+                      setOpen(false)
+                    }}
+                    className="text-white hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   )
