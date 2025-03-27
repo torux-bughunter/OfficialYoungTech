@@ -83,9 +83,9 @@ export default function Home() {
             />
             <ImageCarousel
               images={[
-                { src: "/images/image3.JPG", alt: "Children's Business Fair Event" },
-                { src: "/images/image2.JPG", alt: "Young entrepreneurs at the Business Fair" },
-                { src: "/images/image4.JPG", alt: "Business Fair activities" },
+                { src: "/images/Image3.JPG", alt: "Children's Business Fair Event" },
+                { src: "/images/Image2.JPG", alt: "Young entrepreneurs at the Business Fair" },
+                { src: "/images/Image4.JPG", alt: "Business Fair activities" },
               ]}
             />
           </div>
