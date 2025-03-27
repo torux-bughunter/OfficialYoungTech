@@ -68,7 +68,7 @@ export default function Home() {
               location="Plano, TX"
               description="STEAM Talks is a weekly mentorship program where high school students guide middle schoolers in developing their own passion projects in STEAM (Science, Technology, Engineering, Arts, and Math). Participants gain hands-on experience, learn new skills, and work toward a final showcase where they present their projects to the public.  
 
-As a prerequisite, students will take part in the Children’s Business Fair, where they can launch a mini-business, sell products, and gain real-world entrepreneurial experience. STEAM Talks is a fun, supportive, and free program designed to spark creativity, build confidence, and bring ideas to life!"
+As a prerequisite, students will take part in the Children's Business Fair, where they can launch a mini-business, sell products, and gain real-world entrepreneurial experience. STEAM Talks is a fun, supportive, and free program designed to spark creativity, build confidence, and bring ideas to life!"
             />
           </div>
         </div>
