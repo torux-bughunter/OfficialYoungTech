@@ -63,10 +63,12 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-center">Upcoming Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <EventCard
-              title="Young Tech Pioneers STEM Fair"
-              date="January 5, 2025"
+              title="Young Tech Pioneers STEM Talks"
+              date="April 20, 2025"
               location="Plano, TX"
-              description="Young Tech Pioneers STEM Fairs are 2-4 hour events designed for children ages 7-12. These events feature interactive activities, critical thinking challenges, and guest speakers from the STEM field who provide valuable insights into the vast potential of technology and act as mentors for the child attendees. The fair is primarily centered around our mystery tech challenge, structured like a capture-the-flag (CTF) competition. Each challenge teaches a specific technology, combining education with excitement. Our goal is to make technology learning feel more like an adventure and less like a traditional classroom experience, sparking curiosity and passion in students."
+              description="STEAM Talks is a weekly mentorship program where high school students guide middle schoolers in developing their own passion projects in STEAM (Science, Technology, Engineering, Arts, and Math). Participants gain hands-on experience, learn new skills, and work toward a final showcase where they present their projects to the public.  
+
+As a prerequisite, students will take part in the Children’s Business Fair, where they can launch a mini-business, sell products, and gain real-world entrepreneurial experience. STEAM Talks is a fun, supportive, and free program designed to spark creativity, build confidence, and bring ideas to life!"
             />
           </div>
         </div>
