@@ -64,7 +64,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <EventCard
               title="Young Tech Pioneers STEM Talks"
-              date="April 20, 2025"
+              date="May 4, 2025"
               location="Plano, TX"
               description="STEAM Talks is a weekly mentorship program where high school students guide middle schoolers in developing their own passion projects in STEAM (Science, Technology, Engineering, Arts, and Math). Participants gain hands-on experience, learn new skills, and work toward a final showcase where they present their projects to the public.  
 
